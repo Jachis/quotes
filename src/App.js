@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import QuoteBox from './components/QuoteBox';
+
 
 function App() {
+  const colors = ["lightcoral", "lightblue", "lightgreen", "lightpurple", "lightpink", "lightyellow", "lightorange", "lightgrey"]
+  const randomColors = Math.floor(Math.random() * colors.length - 1)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body>
+      <header className={`App ${colors[randomColors]}`}>
+        <QuoteBox />
+      </header>  
+    </body>
+
   );
 }
 
