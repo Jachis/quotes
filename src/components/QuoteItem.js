@@ -1,12 +1,10 @@
 
-const QuoteItem = (quote, refresh) => {
+const QuoteItem = ({quote, colors}) => {
 
     return (
         <div>
-        
-            <p><span className="quote">"</span>{quote.quote.quote}</p>
-            <span>{quote.quote.author}</span>
-            <button onClick={[refresh]} className="button">next</button>            
+            <span className="colors">{quote.quote}</span>
+            <div className="author colors">{quote.author}</div>
         </div>
     );
 };
