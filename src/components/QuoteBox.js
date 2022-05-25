@@ -17,9 +17,9 @@ const QuoteBox = ( ) => {
     return (
             <div className={`App ${colors[randomColors]}`}>
                 <div className="Card">
-                    <span className="quote">"</span>
+                    <span className="quote"><i class="fa-solid fa-quote-left"></i></span>
                     <QuoteItem quote={quotes[nextQuote]} colors={`${colors[randomColors]}`}/>        
-                    <button onClick={changeQuote} style={{color:"RGB(255,255,255)"}} className={colors[randomColors]}><strong>></strong></button>  
+                    <button onClick={changeQuote} style={{color:"RGB(255,255,255)"}} className={colors[randomColors]}><strong><i className="fa-solid fa-circle-right"></i></strong></button>  
                 </div>    
             </div>
          
